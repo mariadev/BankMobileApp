@@ -19,11 +19,6 @@
 		4C501AB82612D1FD003ADB64 /* CustomUIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AB72612D1FD003ADB64 /* CustomUIStackView.swift */; };
 		4C501ABB2612D202003ADB64 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501ABA2612D202003ADB64 /* UIColor+Hex.swift */; };
 		4C501ABE2612D208003ADB64 /* UIController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501ABD2612D208003ADB64 /* UIController+Navigation.swift */; };
-		4C501AC12612D3E5003ADB64 /* StackViewsLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AC02612D3E5003ADB64 /* StackViewsLayoutHelper.swift */; };
-		4C501AC42612D3F0003ADB64 /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AC32612D3F0003ADB64 /* LayoutHelper.swift */; };
-		4C501AC72612D43A003ADB64 /* UIViewToStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AC62612D43A003ADB64 /* UIViewToStackView.swift */; };
-		4C501ACA2612D43F003ADB64 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AC92612D43F003ADB64 /* Style.swift */; };
-		4C501ACD2612E018003ADB64 /* UIViewToStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501ACC2612E017003ADB64 /* UIViewToStackView.swift */; };
 		4C501AD12613B365003ADB64 /* CustomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AD02613B365003ADB64 /* CustomeTabBarController.swift */; };
 		4C501AD52613E90B003ADB64 /* BlurredLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AD42613E90B003ADB64 /* BlurredLabel.swift */; };
 		4C501ADA26140AA3003ADB64 /* TwoRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AD926140AA3003ADB64 /* TwoRowsView.swift */; };
@@ -33,6 +28,10 @@
 		4CD35F572612941000AD09A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD35F552612941000AD09A5 /* LaunchScreen.storyboard */; };
 		4CEC7D4B26180F8D0049510C /* blogger-sans.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CEC7D4926180EF70049510C /* blogger-sans.light.ttf */; };
 		4CEC7D4F261815180049510C /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEC7D4E261815180049510C /* Header.swift */; };
+		4CFA06992619218E00905DDE /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06982619218E00905DDE /* Style.swift */; };
+		4CFA069D2619219F00905DDE /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA069C2619219F00905DDE /* LayoutHelper.swift */; };
+		4CFA06A0261921B100905DDE /* UIViewToStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA069F261921B100905DDE /* UIViewToStackView.swift */; };
+		4CFA06A3261921C400905DDE /* StackViewsLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06A2261921C400905DDE /* StackViewsLayoutHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,11 +47,6 @@
 		4C501AB72612D1FD003ADB64 /* CustomUIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIStackView.swift; sourceTree = "<group>"; };
 		4C501ABA2612D202003ADB64 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		4C501ABD2612D208003ADB64 /* UIController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIController+Navigation.swift"; sourceTree = "<group>"; };
-		4C501AC02612D3E5003ADB64 /* StackViewsLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StackViewsLayoutHelper.swift; path = "../../../../Documents/swift/FINISHAPPS/StackviewExtension/Stackview/Animations+StyleExtensions/StackViewsLayoutHelper.swift"; sourceTree = "<group>"; };
-		4C501AC32612D3F0003ADB64 /* LayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutHelper.swift; path = "../../../../Documents/swift/FINISHAPPS/StackviewExtension/Stackview/Animations+StyleExtensions/LayoutHelper.swift"; sourceTree = "<group>"; };
-		4C501AC62612D43A003ADB64 /* UIViewToStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewToStackView.swift; path = "../../../../Documents/swift/FINISHAPPS/StackviewExtension/Stackview/Animations+StyleExtensions/UIViewToStackView.swift"; sourceTree = "<group>"; };
-		4C501AC92612D43F003ADB64 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Style.swift; path = "../../../../Documents/swift/FINISHAPPS/StackviewExtension/Stackview/Animations+StyleExtensions/Style.swift"; sourceTree = "<group>"; };
-		4C501ACC2612E017003ADB64 /* UIViewToStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewToStackView.swift; path = "../../../../Documents/swift/FINISHAPPS/StackviewExtension/Stackview/Animations+StyleExtensions/UIViewToStackView.swift"; sourceTree = "<group>"; };
 		4C501AD02613B365003ADB64 /* CustomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTabBarController.swift; sourceTree = "<group>"; };
 		4C501AD42613E90B003ADB64 /* BlurredLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredLabel.swift; sourceTree = "<group>"; };
 		4C501AD926140AA3003ADB64 /* TwoRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoRowsView.swift; sourceTree = "<group>"; };
@@ -64,6 +58,10 @@
 		4CD35F582612941000AD09A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CEC7D4926180EF70049510C /* blogger-sans.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.light.ttf"; sourceTree = "<group>"; };
 		4CEC7D4E261815180049510C /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		4CFA06982619218E00905DDE /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		4CFA069C2619219F00905DDE /* LayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
+		4CFA069F261921B100905DDE /* UIViewToStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewToStackView.swift; sourceTree = "<group>"; };
+		4CFA06A2261921C400905DDE /* StackViewsLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewsLayoutHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +75,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C501AA12612D0FC003ADB64 /* extension */ = {
+		4C501AA12612D0FC003ADB64 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4C501ACC2612E017003ADB64 /* UIViewToStackView.swift */,
-				4C501AC92612D43F003ADB64 /* Style.swift */,
-				4C501AC62612D43A003ADB64 /* UIViewToStackView.swift */,
-				4C501AC32612D3F0003ADB64 /* LayoutHelper.swift */,
-				4C501AC02612D3E5003ADB64 /* StackViewsLayoutHelper.swift */,
+				4C501AD42613E90B003ADB64 /* BlurredLabel.swift */,
 				4C501AA52612D1AF003ADB64 /* CustomeUICollectionView.swift */,
 				4C501AA82612D1CE003ADB64 /* CustomeUIImageView.swift */,
 				4C501AAB2612D1D6003ADB64 /* CustomeUISwitch.swift */,
@@ -94,16 +88,19 @@
 				4C501AB72612D1FD003ADB64 /* CustomUIStackView.swift */,
 				4C501ABA2612D202003ADB64 /* UIColor+Hex.swift */,
 				4C501ABD2612D208003ADB64 /* UIController+Navigation.swift */,
-				4C501AD42613E90B003ADB64 /* BlurredLabel.swift */,
+				4CFA06982619218E00905DDE /* Style.swift */,
+				4CFA069C2619219F00905DDE /* LayoutHelper.swift */,
+				4CFA069F261921B100905DDE /* UIViewToStackView.swift */,
+				4CFA06A2261921C400905DDE /* StackViewsLayoutHelper.swift */,
 			);
-			path = extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4CD35F3E2612940D00AD09A5 = {
 			isa = PBXGroup;
 			children = (
 				4CEC7D0C2617EB670049510C /* fonts */,
-				4C501AA12612D0FC003ADB64 /* extension */,
+				4C501AA12612D0FC003ADB64 /* Extensions */,
 				4CD35F492612940D00AD09A5 /* n26BlurRecreation */,
 				4CD35F482612940D00AD09A5 /* Products */,
 			);
@@ -222,20 +219,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD35F4F2612940D00AD09A5 /* HomeTableViewController.swift in Sources */,
-				4C501ACA2612D43F003ADB64 /* Style.swift in Sources */,
+				4CFA06992619218E00905DDE /* Style.swift in Sources */,
 				4C501AB82612D1FD003ADB64 /* CustomUIStackView.swift in Sources */,
 				4CD35F4B2612940D00AD09A5 /* AppDelegate.swift in Sources */,
 				4C501ADA26140AA3003ADB64 /* TwoRowsView.swift in Sources */,
 				4C501AA62612D1AF003ADB64 /* CustomeUICollectionView.swift in Sources */,
 				4C501AAF2612D1DC003ADB64 /* CustomeUIView.swift in Sources */,
 				4C501A9426129864003ADB64 /* Table.swift in Sources */,
+				4CFA06A0261921B100905DDE /* UIViewToStackView.swift in Sources */,
+				4CFA06A3261921C400905DDE /* StackViewsLayoutHelper.swift in Sources */,
 				4C501ABB2612D202003ADB64 /* UIColor+Hex.swift in Sources */,
 				4C501AB22612D1E8003ADB64 /* CustomUIButton.swift in Sources */,
-				4C501AC12612D3E5003ADB64 /* StackViewsLayoutHelper.swift in Sources */,
-				4C501ACD2612E018003ADB64 /* UIViewToStackView.swift in Sources */,
 				4C501AB52612D1F2003ADB64 /* CustomUILabel.swift in Sources */,
+				4CFA069D2619219F00905DDE /* LayoutHelper.swift in Sources */,
 				4C501AD12613B365003ADB64 /* CustomeTabBarController.swift in Sources */,
-				4C501AC72612D43A003ADB64 /* UIViewToStackView.swift in Sources */,
 				4CEC7D4F261815180049510C /* Header.swift in Sources */,
 				4C501AAC2612D1D6003ADB64 /* CustomeUISwitch.swift in Sources */,
 				4C501AD52613E90B003ADB64 /* BlurredLabel.swift in Sources */,
@@ -243,7 +240,6 @@
 				4C501ABE2612D208003ADB64 /* UIController+Navigation.swift in Sources */,
 				4C501A9E2612BB41003ADB64 /* CustomeCell.swift in Sources */,
 				4C501AA92612D1CE003ADB64 /* CustomeUIImageView.swift in Sources */,
-				4C501AC42612D3F0003ADB64 /* LayoutHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
