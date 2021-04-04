@@ -67,8 +67,7 @@ final class TwoRowsView: CustomUIView {
 //        self.addSubview(topView)
         self.addSubview(wrapermiddleView)
 
-        wrapermiddleView.setAnchor(bottom: self.bottomAnchor, right: self.trailingAnchor, left: self.leadingAnchor,   paddingLeft: 20,
-                                   paddingRight: 20)
+        wrapermiddleView.setAnchor(bottom: self.bottomAnchor, right: self.trailingAnchor, left: self.leadingAnchor)
     
         middleView.HStack(iconLeftMiddle,
                           valueMiddle,

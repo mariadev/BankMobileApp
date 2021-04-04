@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class Table {
+final class UserOperation {
     let companyName: String
     let date: String
     let price: String

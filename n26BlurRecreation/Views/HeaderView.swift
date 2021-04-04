@@ -57,10 +57,7 @@ final class Header: CustomUIView {
 
         topView.setAnchor(top: self.topAnchor,
                           right: self.trailingAnchor,
-                          left: self.leadingAnchor,
-                          paddingTop: 20,
-                          paddingLeft: 20,
-                          paddingRight: 20)
+                          left: self.leadingAnchor)
         
         topView.HStack(iconLeftTop,
                        iconMiddleTop,
