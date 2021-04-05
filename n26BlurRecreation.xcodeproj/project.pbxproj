@@ -32,9 +32,9 @@
 		4CFA06B2261935D400905DDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06B1261935D400905DDE /* Constants.swift */; };
 		4CFA06B926194BB900905DDE /* UserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA06B826194BB900905DDE /* UserData.json */; };
 		4CFA06D5261A266B00905DDE /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06D4261A266B00905DDE /* DataUser.swift */; };
-		4CFA06DA261A2D1F00905DDE /* RetriveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06D9261A2D1F00905DDE /* RetriveData.swift */; };
+		4CFA06DA261A2D1F00905DDE /* ParseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06D9261A2D1F00905DDE /* ParseJson.swift */; };
 		4CFA06DF261A368C00905DDE /* DataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06DE261A368C00905DDE /* DataOperation.swift */; };
-		4CFA06EA261A8F7C00905DDE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06E9261A8F7C00905DDE /* ModelData.swift */; };
+		4CFA06EA261A8F7C00905DDE /* RetrieveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06E9261A8F7C00905DDE /* RetrieveData.swift */; };
 		4CFA06F3261A9EEF00905DDE /* DataOperationsByMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */; };
 		4CFA06F7261B869400905DDE /* CustomeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F6261B869400905DDE /* CustomeSectionView.swift */; };
 /* End PBXBuildFile section */
@@ -67,9 +67,9 @@
 		4CFA06B1261935D400905DDE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4CFA06B826194BB900905DDE /* UserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserData.json; sourceTree = "<group>"; };
 		4CFA06D4261A266B00905DDE /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
-		4CFA06D9261A2D1F00905DDE /* RetriveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetriveData.swift; sourceTree = "<group>"; };
+		4CFA06D9261A2D1F00905DDE /* ParseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJson.swift; sourceTree = "<group>"; };
 		4CFA06DE261A368C00905DDE /* DataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperation.swift; sourceTree = "<group>"; };
-		4CFA06E9261A8F7C00905DDE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		4CFA06E9261A8F7C00905DDE /* RetrieveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveData.swift; sourceTree = "<group>"; };
 		4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationsByMonth.swift; sourceTree = "<group>"; };
 		4CFA06F6261B869400905DDE /* CustomeSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,8 +161,8 @@
 		4CFA06A82619230900905DDE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4CD35F4E2612940D00AD09A5 /* HomeViewController.swift */,
 				4C501AD02613B365003ADB64 /* CustomeTabBarController.swift */,
+				4CD35F4E2612940D00AD09A5 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				4CFA06B826194BB900905DDE /* UserData.json */,
-				4CFA06D9261A2D1F00905DDE /* RetriveData.swift */,
-				4CFA06E9261A8F7C00905DDE /* ModelData.swift */,
+				4CFA06D9261A2D1F00905DDE /* ParseJson.swift */,
+				4CFA06E9261A8F7C00905DDE /* RetrieveData.swift */,
 				4CFA06D3261A262900905DDE /* DataModel */,
 			);
 			path = RetrivingData;
@@ -287,9 +287,9 @@
 				4CFA06A3261921C400905DDE /* StackViewsLayoutHelper.swift in Sources */,
 				4C501ABB2612D202003ADB64 /* UIColor+Hex.swift in Sources */,
 				4C501AB22612D1E8003ADB64 /* CustomUIButton.swift in Sources */,
-				4CFA06EA261A8F7C00905DDE /* ModelData.swift in Sources */,
+				4CFA06EA261A8F7C00905DDE /* RetrieveData.swift in Sources */,
 				4C501AB52612D1F2003ADB64 /* CustomUILabel.swift in Sources */,
-				4CFA06DA261A2D1F00905DDE /* RetriveData.swift in Sources */,
+				4CFA06DA261A2D1F00905DDE /* ParseJson.swift in Sources */,
 				4CFA06F3261A9EEF00905DDE /* DataOperationsByMonth.swift in Sources */,
 				4CFA069D2619219F00905DDE /* LayoutHelper.swift in Sources */,
 				4C501AD12613B365003ADB64 /* CustomeTabBarController.swift in Sources */,

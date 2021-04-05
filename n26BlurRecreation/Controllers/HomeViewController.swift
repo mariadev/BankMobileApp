@@ -21,7 +21,7 @@ class HomeViewController : UIViewController , UIGestureRecognizerDelegate{
     let header = Header()
     let wrapper = CustomUIView()
     
-    let interactor =  ModelData()
+    let interactor =  RetrieveData()
     //    let userDataProvider = RetriveData()
     
     var tableView = UITableView(frame: UIScreen.main.bounds, style: .grouped)

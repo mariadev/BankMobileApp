@@ -7,10 +7,9 @@
 
 import Foundation
 
-class ModelData {
+class RetrieveData {
     
-    let userDataProvider = RetriveData()
-    let url = "https://github.com/mariadev/BankApi/blob/master/UserData.json"
+    let userDataProvider = ParseJson()
   
     func getModel() -> [DataOperationsByMonth] {
         guard let data = userDataProvider.readLocalFile(forName: "UserData") else {
