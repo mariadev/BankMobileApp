@@ -78,21 +78,10 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let title: UILabel = {
-            let title = UILabel(frame: CGRect(x: 0, y: 0, width:tableView.bounds.size.width, height: tableView.bounds.size.height))
-            title.text = model[section].month
-            title.sizeToFit()
-            title.textColor = .black
-            title.font = UIFont(name:Constants.fontFamily,size:Constants.sizeBig)
-            print(model[section].month)
-            return title
-        }()
+        let sectionView = CustomeSectionView()
+        sectionView.title.text = model[section].month
         
-        let headerView = UIView()
-        headerView.backgroundColor = .white
-        headerView.addSubview(title)
-        
-        return headerView
+        return sectionView
         
     }
     
@@ -140,7 +129,7 @@ extension HomeViewController {
             }
         }
     }
-   
+    
 }
 extension HomeViewController {
     

@@ -46,6 +46,7 @@ class CustomCell: UITableViewCell {
         view.HStack(icon,
                          middle,
                          rightView,
+                         spacing: 8,
                          alignment: .center,
                          distribution: .fill
                     )
@@ -55,12 +56,14 @@ class CustomCell: UITableViewCell {
         price.centerYRighttX(center: rightView)
 
     }
+    
     func addImagesFixSize() {
         let calculateHeight = contentView.frame.height / 1.2
         icon.setHeight(calculateHeight)
         icon.setWidth(calculateHeight)
         
     }
+    
     func style() {
         self.backgroundColor = .white
         self.isOpaque = false

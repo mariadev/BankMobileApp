@@ -36,6 +36,7 @@
 		4CFA06DF261A368C00905DDE /* DataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06DE261A368C00905DDE /* DataOperation.swift */; };
 		4CFA06EA261A8F7C00905DDE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06E9261A8F7C00905DDE /* ModelData.swift */; };
 		4CFA06F3261A9EEF00905DDE /* DataOperationsByMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */; };
+		4CFA06F7261B869400905DDE /* CustomeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F6261B869400905DDE /* CustomeSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		4CFA06DE261A368C00905DDE /* DataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperation.swift; sourceTree = "<group>"; };
 		4CFA06E9261A8F7C00905DDE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationsByMonth.swift; sourceTree = "<group>"; };
+		4CFA06F6261B869400905DDE /* CustomeSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				4C501A9D2612BB41003ADB64 /* CustomeCellView.swift */,
+				4CFA06F6261B869400905DDE /* CustomeSectionView.swift */,
 				4C501AD926140AA3003ADB64 /* TwoRowsView.swift */,
 				4CEC7D4E261815180049510C /* HeaderView.swift */,
 			);
@@ -294,6 +297,7 @@
 				4C501AAC2612D1D6003ADB64 /* CustomeUISwitch.swift in Sources */,
 				4C501AD52613E90B003ADB64 /* BlurredLabel.swift in Sources */,
 				4C501ABE2612D208003ADB64 /* UIController+Navigation.swift in Sources */,
+				4CFA06F7261B869400905DDE /* CustomeSectionView.swift in Sources */,
 				4C501A9E2612BB41003ADB64 /* CustomeCellView.swift in Sources */,
 				4C501AA92612D1CE003ADB64 /* CustomeUIImageView.swift in Sources */,
 			);
