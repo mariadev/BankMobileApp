@@ -8,7 +8,7 @@
 import UIKit
 
 final class Header: CustomUIView {
-
+    
     public init() {
         super.init(frame: CGRect.zero)
         initialize()
@@ -23,22 +23,20 @@ final class Header: CustomUIView {
     let iconMiddleTop =  CustomUIImageView()
     let iconRightTop =  CustomUIImageView()
     
-    
     func initialize() {
         style()
         layout()
         addImages()
         addImagesFixSize()
     }
-
     
-     func addImages() {
+    func addImages() {
         iconLeftTop.image = UIImage(systemName: "magnifyingglass")
         iconMiddleTop.image = UIImage(named: "icon4")
         iconRightTop.image = UIImage(systemName: "circle")
         
     }
- 
+    
     private func addImagesFixSize() {
         
         iconLeftTop.setHeight(30)
@@ -52,9 +50,9 @@ final class Header: CustomUIView {
         
     }
     
-     func layout() {
+    func layout() {
         self.addSubview(topView)
-
+        
         topView.setAnchor(top: self.topAnchor,
                           right: self.trailingAnchor,
                           left: self.leadingAnchor)
@@ -64,10 +62,10 @@ final class Header: CustomUIView {
                        iconRightTop,
                        alignment: .leading,
                        distribution: .equalCentering)
-
+        
     }
     
-     func style() {
+    func style() {
         backgroundColor = .white
         [
             iconLeftTop,
@@ -75,7 +73,6 @@ final class Header: CustomUIView {
         ].forEach {
             $0.tintColor =  UIColor(hex: 0x000000)
         }
-     
         
     }
     

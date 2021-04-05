@@ -9,4 +9,4 @@ import Foundation
 
 import UIKit
 
-class CustomeUISwitch : UISwitch, LayoutHelper {}
+class CustomUISwitch : UISwitch, LayoutHelper {}

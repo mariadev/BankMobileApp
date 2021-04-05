@@ -86,12 +86,12 @@ extension LayoutHelper where Self: UIView {
         leadingAnchor.constraint(equalTo: leftX.leadingAnchor).isActive = true
         centerYAnchor.constraint(equalTo:  centerViewY.centerYAnchor).isActive = true
     }
+    
     func centerYRighttX(center: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
         trailingAnchor.constraint(equalTo: center.trailingAnchor).isActive = true
         centerYAnchor.constraint(equalTo:  center.centerYAnchor).isActive = true
     }
-    
     
     func setAnchor(top: NSLayoutYAxisAnchor? = nil,
                    bottom: NSLayoutYAxisAnchor? = nil,
@@ -124,6 +124,7 @@ extension LayoutHelper where Self: UIView {
         widthAnchor.constraint(equalTo: viewWidth, multiplier: multiplier, constant: constant).isActive = true
         
     }
+    
     func setHeightMultiplier(viewHeight: NSLayoutDimension,
                              multiplier: CGFloat = 0,
                              constant: CGFloat = 0) {

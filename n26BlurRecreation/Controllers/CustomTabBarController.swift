@@ -7,8 +7,7 @@
 
 import UIKit
 
-class CustomeTabBarController : UITabBarController {
-    
+class CustomTabBarController : UITabBarController {
     
     override func viewDidLoad() {
     

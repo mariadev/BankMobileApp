@@ -8,7 +8,7 @@
 import UIKit
 
 final class TwoRowsView: CustomUIView {
-
+    
     public init() {
         super.init(frame: CGRect.zero)
         initialize()
@@ -19,7 +19,7 @@ final class TwoRowsView: CustomUIView {
     }
     
     let background =  UIImageView(frame: UIScreen.main.bounds)
-
+    
     let wrapermiddleView = CustomUIView()
     let middleView = CustomUIView()
     let iconLeftMiddle =  CustomUIImageView()
@@ -44,52 +44,52 @@ final class TwoRowsView: CustomUIView {
         current.text = "Current Balance"
     }
     
-     func addImages() {
+    func addImages() {
         iconLeftMiddle.image = UIImage(systemName: "circle.fill")
         iconRightMiddle.image = UIImage(systemName: "arrowtriangle.down.fill")
         line.image = UIImage(named: "icon6")
         
     }
- 
+    
     private func addImagesFixSize() {
         iconLeftMiddle.setHeight(10)
         iconLeftMiddle.setWidth(10)
         
         iconRightMiddle.setHeight(15)
         iconRightMiddle.setWidth(15)
-
+        
         line.setHeight(15)
         line.setWidth(150)
         
     }
     
-     func layout() {
-//        self.addSubview(topView)
+    func layout() {
+        //        self.addSubview(topView)
         self.addSubview(wrapermiddleView)
-
+        
         wrapermiddleView.setAnchor(bottom: self.bottomAnchor, right: self.trailingAnchor, left: self.leadingAnchor)
-    
+        
         middleView.HStack(iconLeftMiddle,
                           valueMiddle,
                           iconRightMiddle,
                           spacing: 8,
                           alignment: .center,
                           distribution: .equalCentering)
-            //.FillEqually .FillProportionally .EqualSpacing .EqualCentering
+        //.FillEqually .FillProportionally .EqualSpacing .EqualCentering
         bottomView.VStack(current,
-                        line,
-                        alignment: .center,
-                        distribution: .equalSpacing)
+                          line,
+                          alignment: .center,
+                          distribution: .equalSpacing)
         wrapermiddleView.VStack(
-                     middleView,
-                     bottomView,
-                     spacing: 8,
-                     alignment: .center
-                   )
-
+            middleView,
+            bottomView,
+            spacing: 8,
+            alignment: .center
+        )
+        
     }
     
-     func style() {
+    func style() {
         backgroundColor = .white
         
         valueMiddle.textAlignment = .center;

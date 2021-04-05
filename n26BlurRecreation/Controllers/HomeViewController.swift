@@ -78,7 +78,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let sectionView = CustomeSectionView()
+        let sectionView = CustomSectionView()
         sectionView.title.text = model[section].month
         
         return sectionView
@@ -97,7 +97,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
-    
     
     //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     //
@@ -131,6 +130,7 @@ extension HomeViewController {
     }
     
 }
+
 extension HomeViewController {
     
     func layout () {

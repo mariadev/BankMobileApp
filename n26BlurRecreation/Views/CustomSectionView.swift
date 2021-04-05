@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomeSectionView: CustomUIView {
+class CustomSectionView: CustomUIView {
     
     var title = CustomUILabel()
     

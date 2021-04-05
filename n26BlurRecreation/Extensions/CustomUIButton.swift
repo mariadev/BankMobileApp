@@ -7,6 +7,6 @@
 
 import UIKit
 
-class CustomeUIButton : UIButton, LayoutHelper {
+class CustomUIButton : UIButton, LayoutHelper {
     
 }
