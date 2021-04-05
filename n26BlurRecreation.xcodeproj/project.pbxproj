@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C501A9426129864003ADB64 /* UserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501A9326129864003ADB64 /* UserOperation.swift */; };
-		4C501A9B2612B1E5003ADB64 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501A9A2612B1E5003ADB64 /* Repository.swift */; };
 		4C501A9E2612BB41003ADB64 /* CustomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501A9D2612BB41003ADB64 /* CustomeCellView.swift */; };
 		4C501AA62612D1AF003ADB64 /* CustomeUICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AA52612D1AF003ADB64 /* CustomeUICollectionView.swift */; };
 		4C501AA92612D1CE003ADB64 /* CustomeUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AA82612D1CE003ADB64 /* CustomeUIImageView.swift */; };
@@ -32,11 +30,15 @@
 		4CFA06A0261921B100905DDE /* UIViewToStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA069F261921B100905DDE /* UIViewToStackView.swift */; };
 		4CFA06A3261921C400905DDE /* StackViewsLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06A2261921C400905DDE /* StackViewsLayoutHelper.swift */; };
 		4CFA06B2261935D400905DDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06B1261935D400905DDE /* Constants.swift */; };
+		4CFA06B926194BB900905DDE /* UserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA06B826194BB900905DDE /* UserData.json */; };
+		4CFA06D5261A266B00905DDE /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06D4261A266B00905DDE /* DataUser.swift */; };
+		4CFA06DA261A2D1F00905DDE /* RetriveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06D9261A2D1F00905DDE /* RetriveData.swift */; };
+		4CFA06DF261A368C00905DDE /* DataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06DE261A368C00905DDE /* DataOperation.swift */; };
+		4CFA06EA261A8F7C00905DDE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06E9261A8F7C00905DDE /* ModelData.swift */; };
+		4CFA06F3261A9EEF00905DDE /* DataOperationsByMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C501A9326129864003ADB64 /* UserOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOperation.swift; sourceTree = "<group>"; };
-		4C501A9A2612B1E5003ADB64 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		4C501A9D2612BB41003ADB64 /* CustomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeCellView.swift; sourceTree = "<group>"; };
 		4C501AA52612D1AF003ADB64 /* CustomeUICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeUICollectionView.swift; sourceTree = "<group>"; };
 		4C501AA82612D1CE003ADB64 /* CustomeUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeUIImageView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,12 @@
 		4CFA069F261921B100905DDE /* UIViewToStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewToStackView.swift; sourceTree = "<group>"; };
 		4CFA06A2261921C400905DDE /* StackViewsLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewsLayoutHelper.swift; sourceTree = "<group>"; };
 		4CFA06B1261935D400905DDE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4CFA06B826194BB900905DDE /* UserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserData.json; sourceTree = "<group>"; };
+		4CFA06D4261A266B00905DDE /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
+		4CFA06D9261A2D1F00905DDE /* RetriveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetriveData.swift; sourceTree = "<group>"; };
+		4CFA06DE261A368C00905DDE /* DataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperation.swift; sourceTree = "<group>"; };
+		4CFA06E9261A8F7C00905DDE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationsByMonth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,8 @@
 		4CD35F492612940D00AD09A5 /* n26BlurRecreation */ = {
 			isa = PBXGroup;
 			children = (
+				4CFA06E3261A619300905DDE /* presenter */,
+				4CFA06D8261A2CED00905DDE /* RetrivingData */,
 				4CFA06B0261935C300905DDE /* Constants */,
 				4CEC7D0C2617EB670049510C /* fonts */,
 				4C501AA12612D0FC003ADB64 /* Extensions */,
@@ -122,8 +132,6 @@
 				4CD35F532612941000AD09A5 /* Assets.xcassets */,
 				4CD35F582612941000AD09A5 /* Info.plist */,
 				4CFA06A82619230900905DDE /* Controllers */,
-				4CFA06A72619230000905DDE /* Data */,
-				4CFA06A6261922F800905DDE /* Entities */,
 				4CEC7D4D261814CF0049510C /* Views */,
 			);
 			path = n26BlurRecreation;
@@ -147,22 +155,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4CFA06A6261922F800905DDE /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				4C501A9326129864003ADB64 /* UserOperation.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		4CFA06A72619230000905DDE /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				4C501A9A2612B1E5003ADB64 /* Repository.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		4CFA06A82619230900905DDE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +170,34 @@
 				4CFA06B1261935D400905DDE /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		4CFA06D3261A262900905DDE /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA06D4261A266B00905DDE /* DataUser.swift */,
+				4CFA06DE261A368C00905DDE /* DataOperation.swift */,
+				4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		4CFA06D8261A2CED00905DDE /* RetrivingData */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA06B826194BB900905DDE /* UserData.json */,
+				4CFA06D9261A2D1F00905DDE /* RetriveData.swift */,
+				4CFA06E9261A8F7C00905DDE /* ModelData.swift */,
+				4CFA06D3261A262900905DDE /* DataModel */,
+			);
+			path = RetrivingData;
+			sourceTree = "<group>";
+		};
+		4CFA06E3261A619300905DDE /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFA06B926194BB900905DDE /* UserData.json in Resources */,
 				4CEC7D4B26180F8D0049510C /* blogger-sans.light.ttf in Resources */,
 				4CD35F542612941000AD09A5 /* Assets.xcassets in Resources */,
 			);
@@ -250,25 +271,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD35F4F2612940D00AD09A5 /* HomeViewController.swift in Sources */,
+				4CFA06DF261A368C00905DDE /* DataOperation.swift in Sources */,
 				4CFA06992619218E00905DDE /* Style.swift in Sources */,
+				4CFA06D5261A266B00905DDE /* DataUser.swift in Sources */,
 				4C501AB82612D1FD003ADB64 /* CustomUIStackView.swift in Sources */,
 				4CD35F4B2612940D00AD09A5 /* AppDelegate.swift in Sources */,
 				4C501ADA26140AA3003ADB64 /* TwoRowsView.swift in Sources */,
 				4C501AA62612D1AF003ADB64 /* CustomeUICollectionView.swift in Sources */,
 				4CFA06B2261935D400905DDE /* Constants.swift in Sources */,
 				4C501AAF2612D1DC003ADB64 /* CustomeUIView.swift in Sources */,
-				4C501A9426129864003ADB64 /* UserOperation.swift in Sources */,
 				4CFA06A0261921B100905DDE /* UIViewToStackView.swift in Sources */,
 				4CFA06A3261921C400905DDE /* StackViewsLayoutHelper.swift in Sources */,
 				4C501ABB2612D202003ADB64 /* UIColor+Hex.swift in Sources */,
 				4C501AB22612D1E8003ADB64 /* CustomUIButton.swift in Sources */,
+				4CFA06EA261A8F7C00905DDE /* ModelData.swift in Sources */,
 				4C501AB52612D1F2003ADB64 /* CustomUILabel.swift in Sources */,
+				4CFA06DA261A2D1F00905DDE /* RetriveData.swift in Sources */,
+				4CFA06F3261A9EEF00905DDE /* DataOperationsByMonth.swift in Sources */,
 				4CFA069D2619219F00905DDE /* LayoutHelper.swift in Sources */,
 				4C501AD12613B365003ADB64 /* CustomeTabBarController.swift in Sources */,
 				4CEC7D4F261815180049510C /* HeaderView.swift in Sources */,
 				4C501AAC2612D1D6003ADB64 /* CustomeUISwitch.swift in Sources */,
 				4C501AD52613E90B003ADB64 /* BlurredLabel.swift in Sources */,
-				4C501A9B2612B1E5003ADB64 /* Repository.swift in Sources */,
 				4C501ABE2612D208003ADB64 /* UIController+Navigation.swift in Sources */,
 				4C501A9E2612BB41003ADB64 /* CustomeCellView.swift in Sources */,
 				4C501AA92612D1CE003ADB64 /* CustomeUIImageView.swift in Sources */,

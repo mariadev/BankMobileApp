@@ -7,26 +7,29 @@
 
 import UIKit
 
-protocol TableViewControllerDelegate: class {
-    
-    func tableViewControllerDelegate (_ viewController: HomeViewController, didSelectTableRow story: UserOperation)
-    
-}
+//protocol TableViewControllerDelegate: class {
+//
+//    func tableViewControllerDelegate (_ viewController: HomeViewController, didSelectTableRow operation: DataOperation)
+//
+//}
 
-class HomeViewController : UIViewController, UITableViewDelegate , UIGestureRecognizerDelegate {
+class HomeViewController : UIViewController , UIGestureRecognizerDelegate{
     
-    let model: [UserOperation]
-    var delegate: TableViewControllerDelegate?
+    var model: [DataOperationsByMonth] = []
+    
     let twoRowsView = TwoRowsView()
     let header = Header()
     let wrapper = CustomUIView()
-    var blurState: Bool = false
+    
+    let interactor =  ModelData()
+    //    let userDataProvider = RetriveData()
+    
     var tableView = UITableView(frame: UIScreen.main.bounds, style: .grouped)
     let customeTableViewCell = "CustomeTableViewCell"
-    var sections: Array<String> = []
     
-    init(model: [UserOperation]) {
-        self.model = model
+    var blurState: Bool = false
+    
+    init() {
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -36,21 +39,26 @@ class HomeViewController : UIViewController, UITableViewDelegate , UIGestureReco
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addTex()
         addImagesFixSize()
         style()
         layout ()
+        model = interactor.getModel()
         
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector( respondToSwipeGesture))
-        swipeUp.direction = UISwipeGestureRecognizer.Direction.up
-          self.view.addGestureRecognizer(swipeUp)
-          
         let swipeDown = UISwipeGestureRecognizer(target: self,action: #selector( respondToSwipeGesture))
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector( respondToSwipeGesture))
+        
+        swipeUp.direction = UISwipeGestureRecognizer.Direction.up
+        self.view.addGestureRecognizer(swipeUp)
+        
         swipeDown.direction = UISwipeGestureRecognizer.Direction.down
-          self.view.addGestureRecognizer(swipeDown)
+        self.view.addGestureRecognizer(swipeDown)
         swipeUp.delegate = self
+        
     }
+    
+}
+
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -59,11 +67,64 @@ class HomeViewController : UIViewController, UITableViewDelegate , UIGestureReco
         tableView.delegate = self
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return model.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return model[section].operations.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let title: UILabel = {
+            let title = UILabel(frame: CGRect(x: 0, y: 0, width:tableView.bounds.size.width, height: tableView.bounds.size.height))
+            title.text = model[section].month
+            title.sizeToFit()
+            title.textColor = .black
+            title.font = UIFont(name:Constants.fontFamily,size:Constants.sizeBig)
+            print(model[section].month)
+            return title
+        }()
+        
+        let headerView = UIView()
+        headerView.backgroundColor = .white
+        headerView.addSubview(title)
+        
+        return headerView
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: customeTableViewCell , for: indexPath) as! CustomCell
+        cell.companyName.text = model[indexPath.section].operations[indexPath.row].companyName
+        cell.price.text = model[indexPath.section].operations[indexPath.row].price
+        cell.date.text = model[indexPath.section].operations[indexPath.row].date
+        cell.icon.image = UIImage(named: model[indexPath.section].operations[indexPath.row].image)
+        
+        cell.price.isBlurring = blurState
+        
+        return cell
+    }
+    
+    
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //
+    //        let userOperations = model[indexPath.section].operations[indexPath.row]
+    //         delegate?.tableViewControllerDelegate(self, didSelectTableRow: userOperations)
+    //
+    //    }
+}
+
+extension HomeViewController {
+    
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
     
-    @objc  func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
             switch swipeGesture.direction {
@@ -79,60 +140,8 @@ class HomeViewController : UIViewController, UITableViewDelegate , UIGestureReco
             }
         }
     }
- 
+   
 }
-
-extension HomeViewController: UITableViewDataSource {
-    
-     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        let title: UILabel = {
-            let title = UILabel(frame: CGRect(x: 0, y: 0, width:
-                        tableView.bounds.size.width, height: tableView.bounds.size.height))
-            title.text = self.sections[section]
-            title.sizeToFit()
-            title.font = UIFont(name:Constants.fontFamily,size:Constants.sizeBig)
-            return title
-        }()
-        
-        let headerView = UIView()
-        headerView.backgroundColor = .white
-        headerView.addSubview(title)
-        
-        return headerView
-           
-    }
-    
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: customeTableViewCell , for: indexPath) as! CustomCell
-        cell.companyName.text = model[indexPath.row].companyName
-        cell.price.text = model[indexPath.row].price
-        cell.date.text = model[indexPath.row].date
-        cell.icon.image = model[indexPath.row].image
-        
-        cell.price.isBlurring = blurState
-        
-        return cell
-    }
-    
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let userOperations =  model[indexPath.row]
-         delegate?.tableViewControllerDelegate(self, didSelectTableRow: userOperations)
-        
-    }
-}
-
 extension HomeViewController {
     
     func layout () {
@@ -140,15 +149,10 @@ extension HomeViewController {
         wrapper.edgeToSafeArea(view, constant: Constants.paddingLeftRight)
         
         wrapper.VStack(header,
-            twoRowsView,
-                        tableView,
-                        spacing: Constants.spacing,
-                        distribution: .fill)
-        tableView.separatorStyle = .none
-    }
-
-    func addTex() {
-        sections = ["May"]
+                       twoRowsView,
+                       tableView,
+                       spacing: Constants.spacing,
+                       distribution: .fill)
     }
     
     func addImagesFixSize() {
@@ -159,6 +163,8 @@ extension HomeViewController {
     
     func style() {
         view.backgroundColor = .white
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = .white
         
     }
     

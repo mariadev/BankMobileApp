@@ -11,15 +11,12 @@ class CustomeTabBarController : UITabBarController {
     
     
     override func viewDidLoad() {
-        
-    let data = Repository()
-    let stories = data.array
     
-    let oneTableViewController = HomeViewController(model: stories)
-    let twoTableViewController = HomeViewController(model: stories)
-    let threeTableViewController = HomeViewController(model: stories)
-    let fourTableViewController = HomeViewController(model: stories)
-    let fiveTableViewController = HomeViewController(model: stories)
+    let oneTableViewController = HomeViewController()
+    let twoTableViewController = HomeViewController()
+    let threeTableViewController = HomeViewController()
+    let fourTableViewController = HomeViewController()
+    let fiveTableViewController = HomeViewController()
     
     let wrapperOneTableViewController = oneTableViewController.wrappedInNavigation()
     let wrapperTwoTableViewController = twoTableViewController.wrappedInNavigation()
