@@ -7,11 +7,11 @@
 
 import UIKit
 
-//protocol TableViewControllerDelegate: class {
-//
-//    func tableViewControllerDelegate (_ viewController: HomeViewController, didSelectTableRow operation: DataOperation)
-//
-//}
+protocol TableViewControllerDelegate: class {
+
+    func tableViewControllerDelegate (_ viewController: HomeViewController, didSelectTableRow operation: DataOperation)
+
+}
 
 class HomeViewController : UIViewController , UIGestureRecognizerDelegate{
     
@@ -98,12 +98,10 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //
-    //        let userOperations = model[indexPath.section].operations[indexPath.row]
-    //         delegate?.tableViewControllerDelegate(self, didSelectTableRow: userOperations)
-    //
-    //    }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            print("I WAS selected", indexPath.row)
+    
+        }
 }
 
 extension HomeViewController {

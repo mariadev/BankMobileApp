@@ -1,6 +1,6 @@
 import UIKit
 
-class BlurredLabel: UILabel, LayoutHelper {
+class BlurredLabel: PaddingLabel, LayoutHelper {
     
     var isBlurring = false {
         didSet {

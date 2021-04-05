@@ -64,7 +64,6 @@ final class TwoRowsView: CustomUIView {
     }
     
     func layout() {
-        //        self.addSubview(topView)
         self.addSubview(wrapermiddleView)
         
         wrapermiddleView.setAnchor(bottom: self.bottomAnchor, right: self.trailingAnchor, left: self.leadingAnchor)
@@ -83,7 +82,7 @@ final class TwoRowsView: CustomUIView {
         wrapermiddleView.VStack(
             middleView,
             bottomView,
-            spacing: 8,
+            spacing: Constants.spacing,
             alignment: .center
         )
         
@@ -94,20 +93,20 @@ final class TwoRowsView: CustomUIView {
         
         valueMiddle.textAlignment = .center;
         valueMiddle.textColor = UIColor.black
-        valueMiddle.font = UIFont(name:"BloggerSans-Light",size:30)
+        valueMiddle.font = UIFont(name:Constants.fontFamily ,size:30)
         
-        current.font = UIFont(name:"BloggerSans-Light",size:15)
+        current.font = UIFont(name:Constants.fontFamily ,size:15)
         current.textColor = UIColor.systemGray
         
         [
             iconRightMiddle
         ].forEach {
-            $0.tintColor =  UIColor(hex: 0x000000)
+            $0.tintColor =  Constants.colorDark
         }
         [
             iconLeftMiddle,
         ].forEach {
-            $0.tintColor =  UIColor(hex: 0x4f887a)
+            $0.tintColor =  Constants.colorAccent
         }
         
     }

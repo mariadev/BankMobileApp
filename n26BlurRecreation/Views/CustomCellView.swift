@@ -11,7 +11,6 @@ class CustomCell: UITableViewCell {
     
     let view = CustomUIView()
     let middle = CustomUIView()
-    let rightView = CustomUIView()
     var companyName = CustomUILabel()
     var price =  BlurredLabel()
     var date = CustomUILabel()
@@ -27,6 +26,19 @@ class CustomCell: UITableViewCell {
         
     }
     
+    override func setSelected(_ selected: Bool, animated: Bool) {
+         super.setSelected(selected, animated: animated)
+
+         if selected {
+            self.selectedBackgroundView?.isHidden = true
+            contentView.backgroundColor =  Constants.colorLight
+            price.backgroundColor =  Constants.colorAccent.withAlphaComponent(0.2)
+         } else {
+            contentView.backgroundColor =  Constants.colorLight
+            price.backgroundColor = Constants.colorLight
+         }
+     }
+    
     func initialize() {
         layout()
         style()
@@ -40,12 +52,10 @@ class CustomCell: UITableViewCell {
         middle.addSubview(companyName)
         middle.addSubview(date)
         
-        rightView.addSubview(price)
-        
         view.setAnchor(top: contentView.topAnchor, bottom:contentView.bottomAnchor, right:contentView.trailingAnchor, left:contentView.leadingAnchor,  paddingTop: Constants.paddingLeftRight, paddingBottom: Constants.paddingLeftRight)
         view.HStack(icon,
                     middle,
-                    rightView,
+                    price,
                     spacing: 8,
                     alignment: .center,
                     distribution: .fill
@@ -53,7 +63,6 @@ class CustomCell: UITableViewCell {
         
         companyName.setAnchor(top: middle.topAnchor)
         date.setAnchor(top: companyName.bottomAnchor, bottom:middle.bottomAnchor,  paddingTop: Constants.paddingTop)
-        price.centerYRighttX(center: rightView)
         
     }
     
@@ -70,6 +79,14 @@ class CustomCell: UITableViewCell {
         
         price.font = UIFont(name:Constants.fontFamily,size:Constants.sizeSmall)
         price.textColor = .darkText
+        price.frame = CGRect(x:0, y:0, width:(price.intrinsicContentSize.width), height: 15)
+        price.layer.cornerRadius = price.frame.size.height/2.0
+        price.layer.masksToBounds = true
+        price.paddingTop = 12
+        price.paddingRight = 10
+        price.paddingLeft = 10
+        price.paddingBottom = 10
+        price.paddingLeft = 10
         
         date.font = UIFont(name:Constants.fontFamily,size:Constants.sizeMedium)
         date.textColor = .systemGray

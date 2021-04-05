@@ -7,4 +7,4 @@
 
 import UIKit
 
-class CustomUILabel : UILabel, LayoutHelper {}
+class CustomUILabel : PaddingLabel, LayoutHelper {}

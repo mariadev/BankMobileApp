@@ -37,6 +37,7 @@
 		4CFA06EA261A8F7C00905DDE /* RetrieveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06E9261A8F7C00905DDE /* RetrieveData.swift */; };
 		4CFA06F3261A9EEF00905DDE /* DataOperationsByMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */; };
 		4CFA06F7261B869400905DDE /* CustomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F6261B869400905DDE /* CustomSectionView.swift */; };
+		4CFA0708261BAAE900905DDE /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA0707261BAAE900905DDE /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		4CFA06E9261A8F7C00905DDE /* RetrieveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveData.swift; sourceTree = "<group>"; };
 		4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationsByMonth.swift; sourceTree = "<group>"; };
 		4CFA06F6261B869400905DDE /* CustomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSectionView.swift; sourceTree = "<group>"; };
+		4CFA0707261BAAE900905DDE /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				4CFA069C2619219F00905DDE /* LayoutHelper.swift */,
 				4CFA069F261921B100905DDE /* UIViewToStackView.swift */,
 				4CFA06A2261921C400905DDE /* StackViewsLayoutHelper.swift */,
+				4CFA0707261BAAE900905DDE /* PaddingLabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				4CD35F4B2612940D00AD09A5 /* AppDelegate.swift in Sources */,
 				4C501ADA26140AA3003ADB64 /* TwoRowsView.swift in Sources */,
 				4C501AA62612D1AF003ADB64 /* CustomUICollectionView.swift in Sources */,
+				4CFA0708261BAAE900905DDE /* PaddingLabel.swift in Sources */,
 				4CFA06B2261935D400905DDE /* Constants.swift in Sources */,
 				4C501AAF2612D1DC003ADB64 /* CustomeUIView.swift in Sources */,
 				4CFA06A0261921B100905DDE /* UIViewToStackView.swift in Sources */,
