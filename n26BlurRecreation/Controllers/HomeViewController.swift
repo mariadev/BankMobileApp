@@ -15,21 +15,19 @@ protocol TableViewControllerDelegate: class {
 
 class HomeViewController : UIViewController , UIGestureRecognizerDelegate{
     
-    var model: [DataOperationsByMonth] = []
+    var model: [DataOperationsByMonth]
     
     let twoRowsView = TwoRowsView()
     let header = Header()
     let wrapper = CustomUIView()
-    
-    let interactor =  RetrieveData()
-    //    let userDataProvider = RetriveData()
     
     var tableView = UITableView(frame: UIScreen.main.bounds, style: .grouped)
     let customeTableViewCell = "CustomeTableViewCell"
     
     var blurState: Bool = false
     
-    init() {
+    init(model:[DataOperationsByMonth]) {
+        self.model = model
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -42,7 +40,6 @@ class HomeViewController : UIViewController , UIGestureRecognizerDelegate{
         addImagesFixSize()
         style()
         layout ()
-        model = interactor.getModel()
         
         let swipeDown = UISwipeGestureRecognizer(target: self,action: #selector( respondToSwipeGesture))
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector( respondToSwipeGesture))

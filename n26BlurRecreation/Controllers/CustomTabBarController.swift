@@ -9,19 +9,24 @@ import UIKit
 
 class CustomTabBarController : UITabBarController {
     
+    let retrieveData =  RetrieveData()
+    var model: [DataOperationsByMonth] = []
+    
     override func viewDidLoad() {
-    
-    let oneTableViewController = HomeViewController()
-    let twoTableViewController = HomeViewController()
-    let threeTableViewController = HomeViewController()
-    let fourTableViewController = HomeViewController()
-    let fiveTableViewController = HomeViewController()
-    
-    let wrapperOneTableViewController = oneTableViewController.wrappedInNavigation()
-    let wrapperTwoTableViewController = twoTableViewController.wrappedInNavigation()
-    let wrapperThreeTableViewController = threeTableViewController.wrappedInNavigation()
-    let wrapperFourTableViewController = fourTableViewController.wrappedInNavigation()
-    let wrapperFiveTableViewController = fiveTableViewController.wrappedInNavigation()
+        
+        model = retrieveData.getModel()
+        
+        let oneTableViewController = HomeViewController(model: model)
+        let twoTableViewController = HomeViewController(model: model)
+        let threeTableViewController = HomeViewController(model: model)
+        let fourTableViewController = HomeViewController(model: model)
+        let fiveTableViewController = HomeViewController(model: model)
+        
+        let wrapperOneTableViewController = oneTableViewController.wrappedInNavigation()
+        let wrapperTwoTableViewController = twoTableViewController.wrappedInNavigation()
+        let wrapperThreeTableViewController = threeTableViewController.wrappedInNavigation()
+        let wrapperFourTableViewController = fourTableViewController.wrappedInNavigation()
+        let wrapperFiveTableViewController = fiveTableViewController.wrappedInNavigation()
         
         wrapperOneTableViewController.tabBarItem.image = UIImage(systemName: "rectangle.split.1x2")
         wrapperOneTableViewController.navigationBar.isHidden = true
@@ -36,7 +41,7 @@ class CustomTabBarController : UITabBarController {
         
         UITabBar.appearance().tintColor = UIColor(hex: 0x4f887a)
         
-    viewControllers = [  wrapperOneTableViewController, wrapperTwoTableViewController, wrapperThreeTableViewController, wrapperFourTableViewController, wrapperFiveTableViewController]
+        viewControllers = [  wrapperOneTableViewController, wrapperTwoTableViewController, wrapperThreeTableViewController, wrapperFourTableViewController, wrapperFiveTableViewController]
     }
     
 }

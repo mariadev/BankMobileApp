@@ -38,7 +38,19 @@
 		4CFA06F3261A9EEF00905DDE /* DataOperationsByMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */; };
 		4CFA06F7261B869400905DDE /* CustomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA06F6261B869400905DDE /* CustomSectionView.swift */; };
 		4CFA0708261BAAE900905DDE /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA0707261BAAE900905DDE /* PaddingLabel.swift */; };
+		4CFA071B261CD97900905DDE /* jsonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA071A261CD97900905DDE /* jsonTest.swift */; };
+		4CFA0737261CDEF200905DDE /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA0736261CDEF200905DDE /* userData.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CFA071D261CD97900905DDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CD35F3F2612940D00AD09A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CD35F462612940D00AD09A5;
+			remoteInfo = n26BlurRecreation;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4C501A9D2612BB41003ADB64 /* CustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellView.swift; sourceTree = "<group>"; };
@@ -74,10 +86,21 @@
 		4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationsByMonth.swift; sourceTree = "<group>"; };
 		4CFA06F6261B869400905DDE /* CustomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSectionView.swift; sourceTree = "<group>"; };
 		4CFA0707261BAAE900905DDE /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		4CFA0718261CD97900905DDE /* n26BlurRecreationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = n26BlurRecreationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFA071A261CD97900905DDE /* jsonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonTest.swift; sourceTree = "<group>"; };
+		4CFA071C261CD97900905DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CFA0736261CDEF200905DDE /* userData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4CD35F442612940D00AD09A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CFA0715261CD97900905DDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -113,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				4CD35F492612940D00AD09A5 /* n26BlurRecreation */,
+				4CFA0719261CD97900905DDE /* n26BlurRecreationTests */,
 				4CD35F482612940D00AD09A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				4CD35F472612940D00AD09A5 /* n26BlurRecreation.app */,
+				4CFA0718261CD97900905DDE /* n26BlurRecreationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +153,6 @@
 		4CD35F492612940D00AD09A5 /* n26BlurRecreation */ = {
 			isa = PBXGroup;
 			children = (
-				4CFA06E3261A619300905DDE /* presenter */,
 				4CFA06D8261A2CED00905DDE /* RetrivingData */,
 				4CFA06B0261935C300905DDE /* Constants */,
 				4CEC7D0C2617EB670049510C /* fonts */,
@@ -199,11 +223,22 @@
 			path = RetrivingData;
 			sourceTree = "<group>";
 		};
-		4CFA06E3261A619300905DDE /* presenter */ = {
+		4CFA0719261CD97900905DDE /* n26BlurRecreationTests */ = {
 			isa = PBXGroup;
 			children = (
+				4CFA0724261CDA6300905DDE /* Resources */,
+				4CFA071A261CD97900905DDE /* jsonTest.swift */,
+				4CFA071C261CD97900905DDE /* Info.plist */,
 			);
-			path = presenter;
+			path = n26BlurRecreationTests;
+			sourceTree = "<group>";
+		};
+		4CFA0724261CDA6300905DDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA0736261CDEF200905DDE /* userData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +261,24 @@
 			productReference = 4CD35F472612940D00AD09A5 /* n26BlurRecreation.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4CFA0717261CD97900905DDE /* n26BlurRecreationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFA071F261CD97900905DDE /* Build configuration list for PBXNativeTarget "n26BlurRecreationTests" */;
+			buildPhases = (
+				4CFA0714261CD97900905DDE /* Sources */,
+				4CFA0715261CD97900905DDE /* Frameworks */,
+				4CFA0716261CD97900905DDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CFA071E261CD97900905DDE /* PBXTargetDependency */,
+			);
+			name = n26BlurRecreationTests;
+			productName = n26BlurRecreationTests;
+			productReference = 4CFA0718261CD97900905DDE /* n26BlurRecreationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,6 +290,10 @@
 				TargetAttributes = {
 					4CD35F462612940D00AD09A5 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					4CFA0717261CD97900905DDE = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4CD35F462612940D00AD09A5;
 					};
 				};
 			};
@@ -254,6 +311,7 @@
 			projectRoot = "";
 			targets = (
 				4CD35F462612940D00AD09A5 /* n26BlurRecreation */,
+				4CFA0717261CD97900905DDE /* n26BlurRecreationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +324,14 @@
 				4CFA06B926194BB900905DDE /* UserData.json in Resources */,
 				4CEC7D4B26180F8D0049510C /* blogger-sans.light.ttf in Resources */,
 				4CD35F542612941000AD09A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CFA0716261CD97900905DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFA0737261CDEF200905DDE /* userData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +373,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CFA0714261CD97900905DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFA071B261CD97900905DDE /* jsonTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CFA071E261CD97900905DDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CD35F462612940D00AD09A5 /* n26BlurRecreation */;
+			targetProxy = 4CFA071D261CD97900905DDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4CD35F592612941000AD09A5 /* Debug */ = {
@@ -464,6 +546,46 @@
 			};
 			name = Release;
 		};
+		4CFA0720261CD97900905DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPQX32MD83;
+				INFOPLIST_FILE = n26BlurRecreationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maria.n26BlurRecreationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/n26BlurRecreation.app/n26BlurRecreation";
+			};
+			name = Debug;
+		};
+		4CFA0721261CD97900905DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPQX32MD83;
+				INFOPLIST_FILE = n26BlurRecreationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maria.n26BlurRecreationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/n26BlurRecreation.app/n26BlurRecreation";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -481,6 +603,15 @@
 			buildConfigurations = (
 				4CD35F5C2612941000AD09A5 /* Debug */,
 				4CD35F5D2612941000AD09A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CFA071F261CD97900905DDE /* Build configuration list for PBXNativeTarget "n26BlurRecreationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CFA0720261CD97900905DDE /* Debug */,
+				4CFA0721261CD97900905DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
