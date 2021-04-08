@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RetrieveData {
+final class RetrieveData {
 
     let userDataProvider = ParseJson()
 

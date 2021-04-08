@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomTabBarController: UITabBarController {
+final class CustomTabBarController: UITabBarController {
 
     let retrieveData =  RetrieveData()
     var model: [DataOperationsByMonth] = []

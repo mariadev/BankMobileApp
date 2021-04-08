@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomCell: UITableViewCell {
+final class CustomCell: UITableViewCell {
 
     let view = CustomUIView()
     let middle = CustomUIView()

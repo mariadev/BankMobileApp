@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
+final class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
 
     var model: [DataOperationsByMonth]
 

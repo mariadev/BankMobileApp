@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DataOperationsByMonth: Codable {
+final class DataOperationsByMonth: Codable {
     let month: String
     let operations: [DataOperation]
 

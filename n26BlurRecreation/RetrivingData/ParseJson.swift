@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ParseJson {
+final class ParseJson {
 
     func readLocalFile(forName name: String) -> DataUser? {
         do {
