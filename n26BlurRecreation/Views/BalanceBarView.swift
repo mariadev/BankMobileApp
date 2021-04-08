@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TwoRowsView: CustomUIView {
+final class BalanceBarView: CustomUIView {
 
     public init() {
         super.init(frame: CGRect.zero)
@@ -35,7 +35,7 @@ final class TwoRowsView: CustomUIView {
         layout()
         addTex()
         addImages()
-        addImagesFixSize()
+        resizeUI()
     }
 
     func addTex() {
@@ -50,7 +50,7 @@ final class TwoRowsView: CustomUIView {
 
     }
 
-    private func addImagesFixSize() {
+    private func resizeUI() {
         iconLeftMiddle.setHeight(10)
         iconLeftMiddle.setWidth(10)
 
@@ -67,20 +67,20 @@ final class TwoRowsView: CustomUIView {
 
         wrapermiddleView.setAnchor(bottom: self.bottomAnchor, right: self.trailingAnchor, left: self.leadingAnchor)
 
-        middleView.hStack(iconLeftMiddle,
+        middleView.horizontalStack(iconLeftMiddle,
                           valueMiddle,
                           iconRightMiddle,
                           spacing: 8,
                           alignment: .center,
                           distribution: .equalCentering)
-        bottomView.vStack(current,
+        bottomView.verticalStack(current,
                           line,
                           alignment: .center,
                           distribution: .equalSpacing)
-        wrapermiddleView.vStack(
+        wrapermiddleView.verticalStack(
             middleView,
             bottomView,
-            spacing: Constants.spacing,
+            spacing: Theme.spacing,
             alignment: .center
         )
 
@@ -91,20 +91,20 @@ final class TwoRowsView: CustomUIView {
 
         valueMiddle.textAlignment = .center
         valueMiddle.textColor = UIColor.black
-        valueMiddle.font = UIFont(name: Constants.fontFamily, size: 30)
+        valueMiddle.font = UIFont(name: Theme.fontFamily, size: 30)
 
-        current.font = UIFont(name: Constants.fontFamily, size: 15)
+        current.font = UIFont(name: Theme.fontFamily, size: 15)
         current.textColor = UIColor.systemGray
 
         [
             iconRightMiddle
         ].forEach {
-            $0.tintColor =  Constants.colorDark
+            $0.tintColor =  Theme.colorDark
         }
         [
             iconLeftMiddle
         ].forEach {
-            $0.tintColor =  Constants.colorAccent
+            $0.tintColor =  Theme.colorAccent
         }
 
     }

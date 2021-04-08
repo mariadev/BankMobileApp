@@ -19,8 +19,7 @@ protocol LayoutHelper {
                    paddingTop: CGFloat,
                    paddingBottom: CGFloat,
                    paddingLeft: CGFloat,
-                   paddingRight: CGFloat
-    )
+                   paddingRight: CGFloat)
 
     func edgeToSafeArea(_ view: UIView, constant: CGFloat)
 
@@ -33,9 +32,11 @@ protocol LayoutHelper {
     func setWidthWithMultiplier(viewWidth: NSLayoutDimension,
                                 multiplier: CGFloat,
                                 constant: CGFloat)
+
     func setHeightMultiplier(viewHeight: NSLayoutDimension,
                              multiplier: CGFloat,
                              constant: CGFloat)
+
     func setHeight(_ height: CGFloat)
 
     func setWidth(_ width: CGFloat)
@@ -51,51 +52,65 @@ extension LayoutHelper where Self: UIView {
     func edgeTo(_ view: UIView,
                 constant: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: view.topAnchor, constant: constant).isActive = true
-        leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant).isActive = true
-        trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -constant).isActive = true
-        bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -constant).isActive = true
+        NSLayoutConstraint.activate([
+        topAnchor.constraint(equalTo: view.topAnchor, constant: constant),
+        leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant),
+        trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -constant),
+        bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -constant)
+        ])
 
     }
 
     func edgeToSafeArea(_ view: UIView,
                         constant: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: constant).isActive = true
-        leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: constant).isActive = true
-        trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -constant).isActive = true
-        bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -constant).isActive = true
+        NSLayoutConstraint.activate([
+                topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: constant),
+                leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: constant),
+                trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -constant),
+                bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -constant)
+        ])
 
     }
 
     func toBottomCenter(bottomView: UIView, centerView: UIView, constant: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
-        bottomAnchor.constraint(equalTo: bottomView.bottomAnchor, constant: -constant).isActive = true
-        centerXAnchor.constraint(equalTo: centerView.centerXAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            bottomAnchor.constraint(equalTo: bottomView.bottomAnchor, constant: -constant),
+            centerXAnchor.constraint(equalTo: centerView.centerXAnchor)
+        ])
     }
 
     func toTopCenter(topView: UIView, centerView: UIView, constant: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: topView.topAnchor, constant: -constant).isActive = true
-        centerXAnchor.constraint(equalTo: centerView.centerXAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            topAnchor.constraint(equalTo: topView.topAnchor, constant: -constant),
+            centerXAnchor.constraint(equalTo: centerView.centerXAnchor)
+        ])
     }
 
     func center(center: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
-        centerXAnchor.constraint(equalTo: center.centerXAnchor).isActive = true
-        centerYAnchor.constraint(equalTo: center.centerYAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            centerXAnchor.constraint(equalTo: center.centerXAnchor),
+            centerYAnchor.constraint(equalTo: center.centerYAnchor)
+        ])
     }
 
     func centerYLeftX(leftX: UIView, centerViewY: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
-        leadingAnchor.constraint(equalTo: leftX.leadingAnchor).isActive = true
-        centerYAnchor.constraint(equalTo: centerViewY.centerYAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            leadingAnchor.constraint(equalTo: leftX.leadingAnchor),
+            centerYAnchor.constraint(equalTo: centerViewY.centerYAnchor)
+        ])
     }
 
     func centerYRightX(center: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
-        trailingAnchor.constraint(equalTo: center.trailingAnchor).isActive = true
-        centerYAnchor.constraint(equalTo: center.centerYAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            trailingAnchor.constraint(equalTo: center.trailingAnchor),
+            centerYAnchor.constraint(equalTo: center.centerYAnchor)
+        ])
     }
 
     func setAnchor(top: NSLayoutYAxisAnchor? = nil,
@@ -126,7 +141,9 @@ extension LayoutHelper where Self: UIView {
                                 multiplier: CGFloat = 0,
                                 constant: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
-        widthAnchor.constraint(equalTo: viewWidth, multiplier: multiplier, constant: constant).isActive = true
+        widthAnchor.constraint(equalTo: viewWidth,
+                               multiplier: multiplier,
+                               constant: constant).isActive = true
 
     }
 
@@ -134,7 +151,9 @@ extension LayoutHelper where Self: UIView {
                              multiplier: CGFloat = 0,
                              constant: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
-        heightAnchor.constraint(equalTo: viewHeight, multiplier: multiplier, constant: constant).isActive = true
+        heightAnchor.constraint(equalTo: viewHeight,
+                                multiplier: multiplier,
+                                constant: constant).isActive = true
 
     }
 

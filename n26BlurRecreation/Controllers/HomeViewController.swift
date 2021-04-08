@@ -7,22 +7,16 @@
 
 import UIKit
 
-protocol TableViewControllerDelegate: class {
-
-    func tableViewControllerDelegate (_ viewController: HomeViewController, didSelectTableRow operation: DataOperation)
-
-}
-
 class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
 
     var model: [DataOperationsByMonth]
 
-    let twoRowsView = TwoRowsView()
-    let header = Header()
+    let balanceView = BalanceBarView()
+    let searchBarView = SearchBarView()
     let wrapper = CustomUIView()
 
-    var tableView = UITableView(frame: UIScreen.main.bounds, style: .grouped)
-    let customeTableViewCell = "CustomeTableViewCell"
+    var tableView = UITableView()
+    let customTableViewCell = "CustomTableViewCell"
 
     var blurState: Bool = false
 
@@ -37,19 +31,18 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addImagesFixSize()
+        resizeUI()
         style()
         layout()
 
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector( respondToSwipeGesture))
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector( respondToSwipeGesture))
-
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
         swipeUp.direction = UISwipeGestureRecognizer.Direction.up
-        self.view.addGestureRecognizer(swipeUp)
-
-        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
-        self.view.addGestureRecognizer(swipeDown)
         swipeUp.delegate = self
+        view.addGestureRecognizer(swipeUp)
+
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
+        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
+        view.addGestureRecognizer(swipeDown)
 
     }
 
@@ -59,7 +52,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.register(CustomCell.self, forCellReuseIdentifier: customeTableViewCell)
+        tableView.register(CustomCell.self, forCellReuseIdentifier: customTableViewCell)
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -84,21 +77,15 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: customeTableViewCell, for: indexPath) as! CustomCell
-        cell.companyName.text = model[indexPath.section].operations[indexPath.row].companyName
-        cell.price.text = model[indexPath.section].operations[indexPath.row].price
-        cell.date.text = model[indexPath.section].operations[indexPath.row].date
-        cell.icon.image = UIImage(systemName: model[indexPath.section].operations[indexPath.row].image)
+        let cell = tableView.dequeueReusableCell(withIdentifier: customTableViewCell, for: indexPath) as! CustomCell
 
+        let operation = model[indexPath.section].operations[indexPath.row]
+        cell.configure(operation: operation)
         cell.price.isBlurring = blurState
 
         return cell
     }
 
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            print("I WAS selected", indexPath.row)
-
-        }
 }
 
 extension HomeViewController {
@@ -130,19 +117,25 @@ extension HomeViewController {
 
     func layout () {
         view.addSubview(wrapper)
-        wrapper.edgeToSafeArea(view, constant: Constants.paddingLeftRight)
+        wrapper.edgeToSafeArea(view, constant: Theme.paddingLeftRight)
+        let arrayViews = [searchBarView, balanceView, tableView]
 
-        wrapper.vStack(header,
-                       twoRowsView,
-                       tableView,
-                       spacing: Constants.spacing,
-                       distribution: .fill)
+        arrayViews.forEach {
+            wrapper.addSubview($0)
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.leadingAnchor.constraint(equalTo: wrapper.leadingAnchor).isActive = true
+            $0.trailingAnchor.constraint(equalTo: wrapper.trailingAnchor).isActive = true
+        }
+        searchBarView.topAnchor.constraint(equalTo: wrapper.topAnchor).isActive = true
+        balanceView.topAnchor.constraint(equalTo: searchBarView.bottomAnchor, constant: 60).isActive = true
+        tableView.topAnchor.constraint(equalTo: balanceView.bottomAnchor, constant: 20).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: wrapper.bottomAnchor).isActive = true
     }
 
-    func addImagesFixSize() {
+    func resizeUI() {
         let computedHeight = view.frame.height / 5
-        twoRowsView.setHeight(computedHeight / 1.5)
-        header.setHeight(computedHeight / 4)
+        balanceView.setHeight(computedHeight / 1.5)
+        searchBarView.setHeight(computedHeight / 4)
     }
 
     func style() {

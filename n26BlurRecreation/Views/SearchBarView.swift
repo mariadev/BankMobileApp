@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class Header: CustomUIView {
+final class SearchBarView: CustomUIView {
 
     public init() {
         super.init(frame: CGRect.zero)
@@ -57,7 +57,7 @@ final class Header: CustomUIView {
                           right: self.trailingAnchor,
                           left: self.leadingAnchor)
 
-        topView.hStack(iconLeftTop,
+        topView.horizontalStack(iconLeftTop,
                        iconMiddleTop,
                        iconRightTop,
                        alignment: .leading,

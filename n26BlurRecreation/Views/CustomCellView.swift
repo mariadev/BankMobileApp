@@ -31,11 +31,11 @@ class CustomCell: UITableViewCell {
 
          if selected {
             self.selectedBackgroundView?.isHidden = true
-            contentView.backgroundColor =  Constants.colorLight
-            price.backgroundColor =  Constants.colorAccent.withAlphaComponent(0.2)
+            contentView.backgroundColor =  Theme.colorLight
+            price.backgroundColor =  Theme.colorAccent.withAlphaComponent(0.2)
          } else {
-            contentView.backgroundColor =  Constants.colorLight
-            price.backgroundColor = Constants.colorLight
+            contentView.backgroundColor =  Theme.colorLight
+            price.backgroundColor = Theme.colorLight
          }
      }
 
@@ -56,9 +56,9 @@ class CustomCell: UITableViewCell {
                        bottom: contentView.bottomAnchor,
                        right: contentView.trailingAnchor,
                        left: contentView.leadingAnchor,
-                       paddingTop: Constants.paddingLeftRight,
-                       paddingBottom: Constants.paddingLeftRight)
-        view.hStack(icon,
+                       paddingTop: Theme.paddingLeftRight,
+                       paddingBottom: Theme.paddingLeftRight)
+        view.horizontalStack(icon,
                     middle,
                     price,
                     spacing: 8,
@@ -69,7 +69,7 @@ class CustomCell: UITableViewCell {
         companyName.setAnchor(top: middle.topAnchor)
         date.setAnchor(top: companyName.bottomAnchor,
                        bottom: middle.bottomAnchor,
-                       paddingTop: Constants.paddingTop)
+                       paddingTop: Theme.paddingTop)
 
     }
 
@@ -84,7 +84,7 @@ class CustomCell: UITableViewCell {
         self.backgroundColor = .white
         self.isOpaque = false
 
-        price.font = UIFont(name: Constants.fontFamily, size: Constants.sizeSmall)
+        price.font = UIFont(name: Theme.fontFamily, size: Theme.sizeSmall)
         price.textColor = .darkText
         price.frame = CGRect(x: 0, y: 0, width: (price.intrinsicContentSize.width), height: 15)
         price.layer.cornerRadius = price.frame.size.height/2.0
@@ -95,13 +95,21 @@ class CustomCell: UITableViewCell {
         price.paddingBottom = 10
         price.paddingLeft = 10
 
-        date.font = UIFont(name: Constants.fontFamily, size: Constants.sizeMedium)
+        date.font = UIFont(name: Theme.fontFamily, size: Theme.sizeMedium)
         date.textColor = .systemGray
 
-        companyName.font = UIFont(name: Constants.fontFamily, size: Constants.sizeBig)
+        companyName.font = UIFont(name: Theme.fontFamily, size: Theme.sizeBig)
         companyName.textColor = .darkText
         companyName.numberOfLines = 0
 
         icon.tintColor =  UIColor(hex: 0x000000)
+    }
+
+    func configure(operation: DataOperation) {
+
+        self.companyName.text = operation.companyName
+        self.price.text = operation.price
+        self.date.text = operation.date
+        self.icon.image = UIImage(systemName: operation.image)
     }
 }

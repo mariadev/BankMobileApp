@@ -36,6 +36,6 @@ class CustomSectionView: CustomUIView {
         self.backgroundColor = .white
         title.sizeToFit()
         title.textColor = .black
-        title.font = UIFont(name: Constants.fontFamily, size: Constants.sizeBig)
+        title.font = UIFont(name: Theme.fontFamily, size: Theme.sizeBig)
     }
 }

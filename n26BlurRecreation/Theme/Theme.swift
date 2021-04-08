@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Constants {
+struct Theme {
     static let paddingLeftRight = CGFloat(20)
     static let paddingTop = CGFloat(10)
 
