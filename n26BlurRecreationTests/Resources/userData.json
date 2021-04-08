@@ -9,47 +9,47 @@
                     "date":"18 May",
                     "price": "-£11.00",
                     "image": "glass",
-                    
+
                 },
                 {
                     "companyName": "VINTAGE TEA & COFFE C",
                     "date":"18 May",
                     "price": "-£11.00",
                     "image": "glass",
-                    
+
                 },
                 {
                     "companyName": "VINTAGE TEA & COFFE C",
                     "date":"18 May",
                     "price": "-£11.00",
                     "image": "glass"
-                    
+
                 },
-                
+
                 {
                     "companyName": "VINTAGE TEA & COFFE C",
                     "date":"18 May",
                     "price": "-£11.00",
                     "image": "glass"
-                    
-                },
-                {
-                    "companyName": "VINTAGE TEA & COFFE C",
-                    "date":"18 May",
-                    "price": "-£11.00",
-                    "image": "glass"
-                    
+
                 },
                 {
                     "companyName": "VINTAGE TEA & COFFE C",
                     "date":"18 May",
                     "price": "-£11.00",
                     "image": "glass"
-                    
+
                 },
-                
+                {
+                    "companyName": "VINTAGE TEA & COFFE C",
+                    "date":"18 May",
+                    "price": "-£11.00",
+                    "image": "glass"
+
+                },
+
             ]
-            
+
         },
         { "month": "April",
             "operations" : [
@@ -58,52 +58,52 @@
                     "date":"18 April",
                     "price": "-£11.00",
                     "image": "glass",
-                    
+
                 },
                 {
                     "companyName": "VINTAGE TEA & COFFE C",
                     "date":"18 April",
                     "price": "-£11.00",
                     "image": "glass",
-                    
+
                 },
                 {
                     "companyName": "VINTAGE TEA & COFFE C",
                     "date":"18 April",
                     "price": "-£11.00",
                     "image": "glass"
-                    
+
                 },
-                
+
                 {
                     "companyName": "VINTAGE TEA & COFFE C",
                     "date":"18 April",
                     "price": "-£11.00",
                     "image": "glass"
-                    
-                },
-                {
-                    "companyName": "VINTAGE TEA & COFFE C",
-                    "date":"18 April",
-                    "price": "-£11.00",
-                    "image": "glass"
-                    
+
                 },
                 {
                     "companyName": "VINTAGE TEA & COFFE C",
                     "date":"18 April",
                     "price": "-£11.00",
                     "image": "glass"
-                    
+
                 },
-                
+                {
+                    "companyName": "VINTAGE TEA & COFFE C",
+                    "date":"18 April",
+                    "price": "-£11.00",
+                    "image": "glass"
+
+                },
+
             ]
-            
+
         }
-        
-        
+
+
     ]
-    
+
 }
 
 

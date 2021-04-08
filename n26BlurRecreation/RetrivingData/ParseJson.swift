@@ -8,7 +8,7 @@
 import Foundation
 
 class ParseJson {
-    
+
     func readLocalFile(forName name: String) -> DataUser? {
         do {
             if let bundlePath = Bundle.main.path(forResource: name,
@@ -20,7 +20,7 @@ class ParseJson {
         } catch {
             print(error)
         }
-        
+
         return nil
     }
 }

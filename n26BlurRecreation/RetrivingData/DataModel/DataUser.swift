@@ -10,7 +10,7 @@ import UIKit
 struct DataUser: Codable {
     let user: String
     let operationsByMonth: [DataOperationsByMonth]
-    
+
     init(user: String, operationsByMonth: [DataOperationsByMonth]) {
         self.user = user
         self.operationsByMonth = operationsByMonth

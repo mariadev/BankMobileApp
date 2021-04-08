@@ -8,9 +8,9 @@
 import Foundation
 
 class RetrieveData {
-    
+
     let userDataProvider = ParseJson()
-  
+
     func getModel() -> [DataOperationsByMonth] {
         guard let data = userDataProvider.readLocalFile(forName: "UserData") else {
              return []
@@ -18,5 +18,5 @@ class RetrieveData {
         print(" data.operationsByMonth", data.operationsByMonth)
         return data.operationsByMonth
     }
-    
+
 }

@@ -9,29 +9,15 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        let tabBarController =  CustomTabBarController()
         window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         
-        
-        let tabBarController =  CustomTabBarController()
-        tabBarController.delegate = self
-        
-        window?.rootViewController = tabBarController
-        
         return true
-    }
-}
-
-extension AppDelegate: UITabBarControllerDelegate {
-    
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        guard let navigationController = viewController as? UINavigationController,
-              let viewController = navigationController.viewControllers.first else { return }
-        
     }
 }

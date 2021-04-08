@@ -19,7 +19,7 @@ protocol StackViewsLayoutHelper {
 }
 
 extension StackViewsLayoutHelper where Self: UIStackView {
-    
+
     func setupSubview(backgroundColor: UIColor = .white, cornerRadius: CGFloat = 0, borderWidth: CGFloat = 0, borderColor: UIColor = .clear) -> CustomUIStackView {
         let subview = UIView(frame: bounds)
         subview.backgroundColor = backgroundColor
@@ -31,22 +31,22 @@ extension StackViewsLayoutHelper where Self: UIStackView {
         insertSubview(subview, at: 0)
         return self as! CustomUIStackView
     }
-    
+
     func height(_ height: CGFloat) -> CustomUIStackView {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: height).isActive = true
         return self as! CustomUIStackView
     }
-    
+
     func width(_ width: CGFloat) -> CustomUIStackView {
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: width).isActive = true
         return self as! CustomUIStackView
     }
-    
+
     func padding(_ margins: [Padding], amount: CGFloat) -> CustomUIStackView {
         isLayoutMarginsRelativeArrangement = true
-        
+
         margins.forEach { (padding) in
             switch padding {
             case .top:
@@ -67,7 +67,7 @@ extension StackViewsLayoutHelper where Self: UIStackView {
                 layoutMargins = UIEdgeInsets(top: amount, left: amount, bottom: amount, right: amount)
             }
         }
-        
+
         return self as! CustomUIStackView
     }
 }

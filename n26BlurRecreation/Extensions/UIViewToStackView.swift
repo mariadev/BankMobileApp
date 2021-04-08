@@ -7,18 +7,18 @@
 
 import UIKit
 
-protocol UIViewToStackView  {
-    func Stack(_ axis: NSLayoutConstraint.Axis,
+protocol UIViewToStackView {
+    func stack(_ axis: NSLayoutConstraint.Axis,
                views: [UIView], spacing: CGFloat,
                alignment: UIStackView.Alignment,
                distribution: UIStackView.Distribution)
     -> CustomUIStackView
-    func VStack(_ views: UIView...,
+    func vStack(_ views: UIView...,
                 spacing: CGFloat,
                 alignment: UIStackView.Alignment,
                 distribution: UIStackView.Distribution)
     -> CustomUIStackView
-    func HStack(_ views: UIView...,
+    func hStack(_ views: UIView...,
                 spacing: CGFloat,
                 alignment: UIStackView.Alignment,
                 distribution: UIStackView.Distribution)
@@ -27,7 +27,7 @@ protocol UIViewToStackView  {
 
 extension UIViewToStackView where Self: UIView {
     @discardableResult
-    func Stack(_ axis: NSLayoutConstraint.Axis = .vertical,
+    func stack(_ axis: NSLayoutConstraint.Axis = .vertical,
                views: [UIView],
                spacing: CGFloat = 0,
                alignment: UIStackView.Alignment = .fill,
@@ -42,33 +42,32 @@ extension UIViewToStackView where Self: UIView {
         stackView.edgeTo(self)
         return stackView
     }
-    
+
     @discardableResult
-    func VStack(_ views: UIView...,
+    func vStack(_ views: UIView...,
                 spacing: CGFloat = 0,
                 alignment: UIStackView.Alignment = .fill,
                 distribution: UIStackView.Distribution = .fill)
     -> CustomUIStackView {
         print(views)
-        return Stack(.vertical,
+        return stack(.vertical,
                      views: views,
                      spacing: spacing,
                      alignment: alignment,
                      distribution: distribution)
     }
-    
+
     @discardableResult
-    func HStack(_ views: UIView...,
+    func hStack(_ views: UIView...,
                 spacing: CGFloat = 0,
                 alignment: UIStackView.Alignment = .fill,
                 distribution: UIStackView.Distribution = .fill)
     -> CustomUIStackView {
-        return Stack(.horizontal,
+        return stack(.horizontal,
                      views: views,
                      spacing: spacing,
                      alignment: alignment,
                      distribution: distribution)
     }
-    
-}
 
+}

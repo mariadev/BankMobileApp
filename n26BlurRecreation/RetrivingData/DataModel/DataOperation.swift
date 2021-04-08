@@ -12,7 +12,7 @@ struct DataOperation: Codable {
     let date: String
     let price: String
     let image: String
-    
+
     init(companyName: String, date: String, price: String, image: String) {
         self.companyName = companyName
         self.date = date
