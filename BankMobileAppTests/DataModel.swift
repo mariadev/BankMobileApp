@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import n26BlurRecreation
+@testable import BankMobileApp
 
 class DataModel: XCTestCase {
 

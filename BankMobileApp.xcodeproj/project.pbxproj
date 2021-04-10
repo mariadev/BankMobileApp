@@ -12,7 +12,7 @@
 		4C501AD12613B365003ADB64 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AD02613B365003ADB64 /* CustomTabBarController.swift */; };
 		4C501ADA26140AA3003ADB64 /* BalanceBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AD926140AA3003ADB64 /* BalanceBarView.swift */; };
 		4C5F0B86261E800F0050EBEB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F0B85261E800F0050EBEB /* .swiftlint.yml */; };
-		4CCA1C3A261F9F8F0009C947 /* CustomeUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA1C39261F9F8F0009C947 /* CustomeUIImageView.swift */; };
+		4CCA1C3A261F9F8F0009C947 /* CustomUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA1C39261F9F8F0009C947 /* CustomUIImageView.swift */; };
 		4CCA1C40261F9FD80009C947 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA1C3F261F9FD80009C947 /* CustomUILabel.swift */; };
 		4CCA1C46261F9FF90009C947 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA1C45261F9FF90009C947 /* CustomUIView.swift */; };
 		4CCA1C4C261FA0170009C947 /* CustomUIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA1C4B261FA0170009C947 /* CustomUIStackView.swift */; };
@@ -58,7 +58,7 @@
 		4C501AD02613B365003ADB64 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		4C501AD926140AA3003ADB64 /* BalanceBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceBarView.swift; sourceTree = "<group>"; };
 		4C5F0B85261E800F0050EBEB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		4CCA1C39261F9F8F0009C947 /* CustomeUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeUIImageView.swift; sourceTree = "<group>"; };
+		4CCA1C39261F9F8F0009C947 /* CustomUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIImageView.swift; sourceTree = "<group>"; };
 		4CCA1C3F261F9FD80009C947 /* CustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
 		4CCA1C45261F9FF90009C947 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		4CCA1C4B261FA0170009C947 /* CustomUIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIStackView.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		4CCA1C57261FA0540009C947 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 		4CCA1C5F261FA07B0009C947 /* BlurredLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredLabel.swift; sourceTree = "<group>"; };
 		4CD2AF8E261CE6CB0085053D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		4CD35F472612940D00AD09A5 /* n26BlurRecreation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = n26BlurRecreation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD35F472612940D00AD09A5 /* BankMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD35F4A2612940D00AD09A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD35F4E2612940D00AD09A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4CD35F532612941000AD09A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		4CFA06F2261A9EEF00905DDE /* DataOperationsByMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationsByMonth.swift; sourceTree = "<group>"; };
 		4CFA06F6261B869400905DDE /* CustomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSectionView.swift; sourceTree = "<group>"; };
 		4CFA0707261BAAE900905DDE /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		4CFA0718261CD97900905DDE /* n26BlurRecreationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = n26BlurRecreationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFA0718261CD97900905DDE /* BankMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFA071A261CD97900905DDE /* jsonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonTest.swift; sourceTree = "<group>"; };
 		4CFA071C261CD97900905DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CFA0736261CDEF200905DDE /* userData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 		4CD35F3E2612940D00AD09A5 = {
 			isa = PBXGroup;
 			children = (
-				4CD35F492612940D00AD09A5 /* n26BlurRecreation */,
-				4CFA0719261CD97900905DDE /* n26BlurRecreationTests */,
+				4CD35F492612940D00AD09A5 /* BankMobileApp */,
+				4CFA0719261CD97900905DDE /* BankMobileAppTests */,
 				4CD35F482612940D00AD09A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,13 +135,13 @@
 		4CD35F482612940D00AD09A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4CD35F472612940D00AD09A5 /* n26BlurRecreation.app */,
-				4CFA0718261CD97900905DDE /* n26BlurRecreationTests.xctest */,
+				4CD35F472612940D00AD09A5 /* BankMobileApp.app */,
+				4CFA0718261CD97900905DDE /* BankMobileAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4CD35F492612940D00AD09A5 /* n26BlurRecreation */ = {
+		4CD35F492612940D00AD09A5 /* BankMobileApp */ = {
 			isa = PBXGroup;
 			children = (
 				4CF63ACF261F9E7F005973C8 /* CustomViews */,
@@ -156,7 +156,7 @@
 				4CEC7D4D261814CF0049510C /* Views */,
 				4C5F0B85261E800F0050EBEB /* .swiftlint.yml */,
 			);
-			path = n26BlurRecreation;
+			path = BankMobileApp;
 			sourceTree = "<group>";
 		};
 		4CEC7D0C2617EB670049510C /* fonts */ = {
@@ -181,7 +181,7 @@
 		4CF63ACF261F9E7F005973C8 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				4CCA1C39261F9F8F0009C947 /* CustomeUIImageView.swift */,
+				4CCA1C39261F9F8F0009C947 /* CustomUIImageView.swift */,
 				4CCA1C3F261F9FD80009C947 /* CustomUILabel.swift */,
 				4CCA1C45261F9FF90009C947 /* CustomUIView.swift */,
 				4CCA1C4B261FA0170009C947 /* CustomUIStackView.swift */,
@@ -230,7 +230,7 @@
 			path = RetrivingData;
 			sourceTree = "<group>";
 		};
-		4CFA0719261CD97900905DDE /* n26BlurRecreationTests */ = {
+		4CFA0719261CD97900905DDE /* BankMobileAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				4CFA0724261CDA6300905DDE /* Resources */,
@@ -238,7 +238,7 @@
 				4CD2AF8E261CE6CB0085053D /* DataModel.swift */,
 				4CFA071C261CD97900905DDE /* Info.plist */,
 			);
-			path = n26BlurRecreationTests;
+			path = BankMobileAppTests;
 			sourceTree = "<group>";
 		};
 		4CFA0724261CDA6300905DDE /* Resources */ = {
@@ -252,9 +252,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4CD35F462612940D00AD09A5 /* n26BlurRecreation */ = {
+		4CD35F462612940D00AD09A5 /* BankMobileApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CD35F5B2612941000AD09A5 /* Build configuration list for PBXNativeTarget "n26BlurRecreation" */;
+			buildConfigurationList = 4CD35F5B2612941000AD09A5 /* Build configuration list for PBXNativeTarget "BankMobileApp" */;
 			buildPhases = (
 				4CD35F432612940D00AD09A5 /* Sources */,
 				4CD35F442612940D00AD09A5 /* Frameworks */,
@@ -265,14 +265,14 @@
 			);
 			dependencies = (
 			);
-			name = n26BlurRecreation;
+			name = BankMobileApp;
 			productName = n26BlurRecreation;
-			productReference = 4CD35F472612940D00AD09A5 /* n26BlurRecreation.app */;
+			productReference = 4CD35F472612940D00AD09A5 /* BankMobileApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4CFA0717261CD97900905DDE /* n26BlurRecreationTests */ = {
+		4CFA0717261CD97900905DDE /* BankMobileAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CFA071F261CD97900905DDE /* Build configuration list for PBXNativeTarget "n26BlurRecreationTests" */;
+			buildConfigurationList = 4CFA071F261CD97900905DDE /* Build configuration list for PBXNativeTarget "BankMobileAppTests" */;
 			buildPhases = (
 				4CFA0714261CD97900905DDE /* Sources */,
 				4CFA0715261CD97900905DDE /* Frameworks */,
@@ -283,9 +283,9 @@
 			dependencies = (
 				4CFA071E261CD97900905DDE /* PBXTargetDependency */,
 			);
-			name = n26BlurRecreationTests;
+			name = BankMobileAppTests;
 			productName = n26BlurRecreationTests;
-			productReference = 4CFA0718261CD97900905DDE /* n26BlurRecreationTests.xctest */;
+			productReference = 4CFA0718261CD97900905DDE /* BankMobileAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -306,7 +306,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4CD35F422612940D00AD09A5 /* Build configuration list for PBXProject "n26BlurRecreation" */;
+			buildConfigurationList = 4CD35F422612940D00AD09A5 /* Build configuration list for PBXProject "BankMobileApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -319,8 +319,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4CD35F462612940D00AD09A5 /* n26BlurRecreation */,
-				4CFA0717261CD97900905DDE /* n26BlurRecreationTests */,
+				4CD35F462612940D00AD09A5 /* BankMobileApp */,
+				4CFA0717261CD97900905DDE /* BankMobileAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -382,7 +382,7 @@
 				4CCA1C58261FA0540009C947 /* CustomUIButton.swift in Sources */,
 				4CFA0708261BAAE900905DDE /* PaddingLabel.swift in Sources */,
 				4CFA06B2261935D400905DDE /* Theme.swift in Sources */,
-				4CCA1C3A261F9F8F0009C947 /* CustomeUIImageView.swift in Sources */,
+				4CCA1C3A261F9F8F0009C947 /* CustomUIImageView.swift in Sources */,
 				4CFA06A0261921B100905DDE /* UIViewToStackView.swift in Sources */,
 				4CCA1C4C261FA0170009C947 /* CustomUIStackView.swift in Sources */,
 				4CFA06A3261921C400905DDE /* StackViewsLayoutHelper.swift in Sources */,
@@ -415,7 +415,7 @@
 /* Begin PBXTargetDependency section */
 		4CFA071E261CD97900905DDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4CD35F462612940D00AD09A5 /* n26BlurRecreation */;
+			target = 4CD35F462612940D00AD09A5 /* BankMobileApp */;
 			targetProxy = 4CFA071D261CD97900905DDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -544,12 +544,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VPQX32MD83;
-				INFOPLIST_FILE = n26BlurRecreation/Info.plist;
+				INFOPLIST_FILE = BankMobileApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = maria.n26BlurRecreation;
+				PRODUCT_BUNDLE_IDENTIFIER = maria.BankMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -563,12 +563,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VPQX32MD83;
-				INFOPLIST_FILE = n26BlurRecreation/Info.plist;
+				INFOPLIST_FILE = BankMobileApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = maria.n26BlurRecreation;
+				PRODUCT_BUNDLE_IDENTIFIER = maria.BankMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -581,7 +581,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VPQX32MD83;
-				INFOPLIST_FILE = n26BlurRecreationTests/Info.plist;
+				INFOPLIST_FILE = BankMobileAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,7 +591,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/n26BlurRecreation.app/n26BlurRecreation";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankMobileApp.app/BankMobileApp";
 			};
 			name = Debug;
 		};
@@ -601,7 +601,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VPQX32MD83;
-				INFOPLIST_FILE = n26BlurRecreationTests/Info.plist;
+				INFOPLIST_FILE = BankMobileAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,14 +611,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/n26BlurRecreation.app/n26BlurRecreation";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankMobileApp.app/BankMobileApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4CD35F422612940D00AD09A5 /* Build configuration list for PBXProject "n26BlurRecreation" */ = {
+		4CD35F422612940D00AD09A5 /* Build configuration list for PBXProject "BankMobileApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CD35F592612941000AD09A5 /* Debug */,
@@ -627,7 +627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CD35F5B2612941000AD09A5 /* Build configuration list for PBXNativeTarget "n26BlurRecreation" */ = {
+		4CD35F5B2612941000AD09A5 /* Build configuration list for PBXNativeTarget "BankMobileApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CD35F5C2612941000AD09A5 /* Debug */,
@@ -636,7 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CFA071F261CD97900905DDE /* Build configuration list for PBXNativeTarget "n26BlurRecreationTests" */ = {
+		4CFA071F261CD97900905DDE /* Build configuration list for PBXNativeTarget "BankMobileAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CFA0720261CD97900905DDE /* Debug */,
