@@ -6,5 +6,5 @@ Table view base on a bank app style.  With a slide down gesture will hide  money
 ## Screenshots
 
 <p float="left">
-<img src="https://github.com/mariadev/MariaGame/blob/main/ScreenShots/Game.gif">
+<img src="https://github.com/mariadev/BankMobileApp/blob/main/ScreenShots/image1.png">
 </p>
