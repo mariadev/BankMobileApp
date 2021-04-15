@@ -12,6 +12,7 @@
 		4C501AD12613B365003ADB64 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AD02613B365003ADB64 /* CustomTabBarController.swift */; };
 		4C501ADA26140AA3003ADB64 /* BalanceBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AD926140AA3003ADB64 /* BalanceBarView.swift */; };
 		4C5F0B86261E800F0050EBEB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F0B85261E800F0050EBEB /* .swiftlint.yml */; };
+		4C7B2C692628CA9C00314AD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B2C682628CA9C00314AD6 /* README.md */; };
 		4CCA1C3A261F9F8F0009C947 /* CustomUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA1C39261F9F8F0009C947 /* CustomUIImageView.swift */; };
 		4CCA1C40261F9FD80009C947 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA1C3F261F9FD80009C947 /* CustomUILabel.swift */; };
 		4CCA1C46261F9FF90009C947 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA1C45261F9FF90009C947 /* CustomUIView.swift */; };
@@ -58,6 +59,7 @@
 		4C501AD02613B365003ADB64 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		4C501AD926140AA3003ADB64 /* BalanceBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceBarView.swift; sourceTree = "<group>"; };
 		4C5F0B85261E800F0050EBEB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		4C7B2C682628CA9C00314AD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4CCA1C39261F9F8F0009C947 /* CustomUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIImageView.swift; sourceTree = "<group>"; };
 		4CCA1C3F261F9FD80009C947 /* CustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
 		4CCA1C45261F9FF90009C947 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		4CD35F3E2612940D00AD09A5 = {
 			isa = PBXGroup;
 			children = (
+				4C7B2C682628CA9C00314AD6 /* README.md */,
 				4CD35F492612940D00AD09A5 /* BankMobileApp */,
 				4CFA0719261CD97900905DDE /* BankMobileAppTests */,
 				4CD35F482612940D00AD09A5 /* Products */,
@@ -332,6 +335,7 @@
 			files = (
 				4C5F0B86261E800F0050EBEB /* .swiftlint.yml in Resources */,
 				4CFA06B926194BB900905DDE /* UserData.json in Resources */,
+				4C7B2C692628CA9C00314AD6 /* README.md in Resources */,
 				4CEC7D4B26180F8D0049510C /* blogger-sans.light.ttf in Resources */,
 				4CD35F542612941000AD09A5 /* Assets.xcassets in Resources */,
 			);
