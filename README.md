@@ -17,7 +17,7 @@
 
 ## Description
 
-- UI base on a bank style app. The screen has a slide down gesture that will hide  money amounts adding a blur effect
+- UI base on a bank style app. The screen has a slide down gesture that will hide  money amounts adding a blur effect.
 
 #### Frameworks
 
@@ -27,13 +27,13 @@
 ### What I Learned:
 - Retrieve data from a Local File
 - Diference between Codable and Decodable
-- Creating a blur effect responsive to gestures.
+- Creating a blur effect responsive to gestures
 - Populate a Table View with data from a Local File
 ---
 
 ## How To Use
 
-- Clone the project and run it on Xcode 11 or above
+- Clone the project and run it on Xcode 11 or above.
 ---
 
 ## Author Info
