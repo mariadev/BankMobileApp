@@ -28,7 +28,7 @@
 - Retrieve data from a Local File
 - Diference between Codable and Decodable
 - Creating a blur effect responsive to gestures.
-- populated a Table View with data from a Local File
+- Populate a Table View with data from a Local File
 ---
 
 ## How To Use
