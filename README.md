@@ -18,6 +18,7 @@
 ## Description
 
 - UI base on a bank style app. The screen has a slide down gesture that will hide  money amounts adding a blur effect.
+- Programmatic UI (No Storyboard)
 
 #### Frameworks
 
