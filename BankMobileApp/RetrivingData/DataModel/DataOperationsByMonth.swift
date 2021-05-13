@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class DataOperationsByMonth: Codable {
+final class DataOperationsByMonth: Decodable {
     let month: String
     let operations: [DataOperation]
 
@@ -26,10 +26,4 @@ final class DataOperationsByMonth: Codable {
         operations = try values.decode([DataOperation].self, forKey: .operations)
     }
 
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-
-        try container.encode(month, forKey: .month)
-        try container.encode(operations, forKey: .operations)
-    }
 }

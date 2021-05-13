@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct DataOperation: Codable {
+struct DataOperation: Decodable {
     let companyName: String
     let date: String
     let price: String
@@ -30,14 +30,5 @@ struct DataOperation: Codable {
         date = try values.decode(String.self, forKey: .date)
         price = try values.decode(String.self, forKey: .price)
         image = try values.decode(String.self, forKey: .image)
-    }
-
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-
-        try container.encode(companyName, forKey: .companyName)
-        try container.encode(date, forKey: .date)
-        try container.encode(price, forKey: .price)
-        try container.encode(image, forKey: .image)
     }
 }

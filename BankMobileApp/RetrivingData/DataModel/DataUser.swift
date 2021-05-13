@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct DataUser: Codable {
+struct DataUser: Decodable {
     let user: String
     let operationsByMonth: [DataOperationsByMonth]
 
@@ -25,11 +25,5 @@ struct DataUser: Codable {
         user = try values.decode(String.self, forKey: .user)
         operationsByMonth = try values.decode([DataOperationsByMonth].self, forKey: .operationsByMonth)
     }
-
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-
-        try container.encode(user, forKey: .user)
-        try container.encode(operationsByMonth, forKey: .operationsByMonth)
-    }
+                  
 }
